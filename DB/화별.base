@@ -1,0 +1,46 @@
+filters:
+  and:
+    - file.inFolder("화별")
+properties:
+  note.글자수:
+    displayName: 글자 수
+  note.변한것:
+    displayName: 변한 것
+  note.심은복선:
+    displayName: 심은 복선
+views:
+  - type: table
+    name: 전체 화
+    order:
+      - file.name
+      - 상태
+      - 아크
+      - 글자수
+      - 요약
+      - 훅
+      - 등장인물
+      - 심은복선
+    sort:
+      - property: 화번호
+        direction: ASC
+  - type: table
+    name: 상태별
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - file.name
+      - 요약
+      - 글자수
+    sort:
+      - property: 화번호
+        direction: ASC
+  - type: cards
+    name: 카드
+    order:
+      - file.name
+      - 변한것
+      - 상태
+    sort:
+      - property: 화번호
+        direction: ASC

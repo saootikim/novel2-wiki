@@ -1,0 +1,30 @@
+views:
+  - type: table
+    name: 능력
+    filters:
+      and:
+        - file.inFolder("능력")
+    order:
+      - file.name
+      - 요약
+      - 첫등장
+      - 공개
+  - type: table
+    name: 용어
+    filters:
+      and:
+        - file.inFolder("용어")
+    order:
+      - file.name
+      - 요약
+      - 첫등장
+      - 공개
+  - type: table
+    name: 장소
+    filters:
+      and:
+        - file.inFolder("장소")
+    order:
+      - file.name
+      - 요약
+      - 첫등장

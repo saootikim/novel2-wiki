@@ -1,0 +1,43 @@
+filters:
+  and:
+    - file.inFolder("복선")
+properties:
+  note.순환결말번호:
+    displayName: "#"
+  note.눈에띄는정도:
+    displayName: 눈에 띄는 정도
+views:
+  - type: table
+    name: 전체 복선
+    order:
+      - 순환결말번호
+      - file.name
+      - 심은화
+      - 회수예정
+      - 상태
+      - 중요도
+      - 확정도
+      - 눈에띄는정도
+      - 암시
+    sort:
+      - property: 순환결말번호
+        direction: ASC
+  - type: table
+    name: 확정도별
+    groupBy:
+      property: 확정도
+      direction: ASC
+    order:
+      - file.name
+      - 심은화
+      - 회수예정
+      - 중요도
+  - type: table
+    name: 상태별
+    groupBy:
+      property: 상태
+      direction: ASC
+    order:
+      - file.name
+      - 심은화
+      - 회수예정

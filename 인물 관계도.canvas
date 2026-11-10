@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"yu","type":"file","file":"캐릭터/한유림.md","x":0,"y":0,"width":260,"height":140,"color":"1"},
+		{"id":"jh","type":"file","file":"캐릭터/이재현.md","x":-500,"y":-260,"width":260,"height":140,"color":"4"},
+		{"id":"mom","type":"file","file":"캐릭터/유림 엄마.md","x":-500,"y":60,"width":260,"height":140},
+		{"id":"dad","type":"file","file":"캐릭터/유림 아빠.md","x":-500,"y":330,"width":260,"height":140},
+		{"id":"kd","type":"file","file":"캐릭터/김도현.md","x":500,"y":330,"width":260,"height":140},
+		{"id":"cv","type":"file","file":"캐릭터/편의점 알바생.md","x":500,"y":60,"width":260,"height":140},
+		{"id":"fr","type":"file","file":"캐릭터/대학 친구.md","x":-180,"y":480,"width":260,"height":140},
+		{"id":"prev","type":"file","file":"용어/리셋 전 작가.md","x":0,"y":-480,"width":260,"height":140,"color":"6"},
+		{"id":"out","type":"file","file":"용어/A-1 밖의 존재들.md","x":500,"y":-480,"width":260,"height":140,"color":"5"},
+		{"id":"next","type":"file","file":"용어/다음 작가.md","x":0,"y":-760,"width":260,"height":140,"color":"3"},
+		{"id":"t","type":"text","text":"## 인물 관계도\n작가용. 위쪽(리셋 전 작가·A-1 밖의 존재들·다음 작가)은 본문 미공개","x":-900,"y":-760,"width":340,"height":140}
+	],
+	"edges":[
+		{"id":"e0","fromNode":"jh","toNode":"yu","toEnd":"arrow","label":"고등학교 동창 → 첫 동료(1부 끝, 확정)","fromSide":"right","toSide":"left"},
+		{"id":"e1","fromNode":"mom","toNode":"yu","toEnd":"arrow","label":"엄마 · 큰 줄기 재등장","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"dad","toNode":"yu","toEnd":"arrow","label":"아빠 · 큰 줄기 재등장","fromSide":"top","toSide":"bottom"},
+		{"id":"e3","fromNode":"yu","toNode":"kd","toEnd":"arrow","label":"처음 바꾼 모르는 사람","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"yu","toNode":"cv","toEnd":"arrow","label":"매일 아침 마주침","fromSide":"right","toSide":"left"},
+		{"id":"e5","fromNode":"fr","toNode":"yu","toEnd":"arrow","label":"대학 친구","fromSide":"top","toSide":"bottom"},
+		{"id":"e6","fromNode":"prev","toNode":"yu","toEnd":"arrow","label":"유림을 고름 · 9화 벽 문장","fromSide":"bottom","toSide":"top"},
+		{"id":"e7","fromNode":"yu","toNode":"out","toEnd":"arrow","label":"제출 · 등급 = 독자 수","fromSide":"top","toSide":"bottom"},
+		{"id":"e8","fromNode":"yu","toNode":"next","toEnd":"arrow","label":"제출 뒤 고름 (모르는 사람)","fromSide":"top","toSide":"bottom"}
+	]
+}

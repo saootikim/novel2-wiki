@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.inFolder("캐릭터")
+properties:
+  note.큰줄기:
+    displayName: 큰 줄기
+views:
+  - type: table
+    name: 전체 인물
+    order:
+      - 아이콘
+      - file.name
+      - 역할
+      - 관계
+      - 첫등장
+      - 상태
+      - 큰줄기
+      - 확정도
+  - type: cards
+    name: 카드
+    order:
+      - file.name
+      - 역할
+      - 관계
